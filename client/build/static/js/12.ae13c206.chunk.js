@@ -1,2 +1,0 @@
-(this["webpackJsonpdefinition-music-and-mastering"]=this["webpackJsonpdefinition-music-and-mastering"]||[]).push([[12],{466:function(t,e,a){"use strict";a.r(e);var n=a(0),c=a.n(n),r=a(29);e.default=function(t){return c.a.createElement("div",null,c.a.createElement("h1",null,"Mastered Track A/B Comparisons"),c.a.createElement(r.b,{to:"".concat(t.match.url,"/13")},"TO SONG 13"),c.a.createElement(r.b,{to:"".concat(t.match.url,"/17")},"TO SONG 17"),c.a.createElement(r.b,{to:"".concat(t.match.url,"/21")},"TO SONG 21"))}}}]);
-//# sourceMappingURL=12.ae13c206.chunk.js.map
