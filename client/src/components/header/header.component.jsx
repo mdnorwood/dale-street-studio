@@ -38,12 +38,6 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
         <LogoContainer to='/'>
           <LogoMain />
         </LogoContainer>
-        <LogoText>
-          Dale Street Studio<br />
-          <LogoSubText>
-            beats. mixing. music.
-          </LogoSubText>
-        </LogoText>
         <OptionsContainer>
           <SpecialText isActive={false}>Now Booking Clients</SpecialText>
           <OptionLink

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../assets/SVG/logo.svg';
+import { ReactComponent as Logo } from '../../assets/SVG/Dale-St-Studio.svg';
 
 
 export const MainHeaderContainer = styled.header`
@@ -40,7 +40,9 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const LogoMain = styled(Logo)`
-  width: 80px;
+  width: 500px;
+
+  
 
   @media screen and (max-width: 800px) {
       width: 50px;
