@@ -37,6 +37,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
       <HeaderContainer>
         <LogoContainer to='/'>
           <LogoMain />
+          <LogoText>DALE STREET STUDIO</LogoText>
         </LogoContainer>
         <OptionsContainer>
           <SpecialText isActive={false}>Now Booking Clients</SpecialText>
@@ -74,31 +75,10 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
           >
             ABOUT
           </OptionLink>
-          <OptionLink to={{ pathname: "http://localhost:8000/" }} target="_blank">
-            BLOG
-          </OptionLink>
-          <OptionLink
-            exact
-            to='/contact'
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#faae2b",
-              fontSize: "25px"
-            }}
-          >
-            CONTACT
-          </OptionLink>
-          <OptionLink
-            exact
-            to='/shop'
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#faae2b",
-              fontSize: "25px"
-            }}
-          >
-            SHOP
-          </OptionLink>
+          <a style={{ color: 'white', padding: '15px' }} href={'http://eepurl.com/hyqpfb'}>BOOK SERVICES</a>
+          
+          <a style={{ color: 'white', padding: '15px' }} target="new" href={'https://beatstyle.launchcart.store/shop'}>BeatStyle Merch</a>
+          
         </OptionsContainer>
 
         {currentUser ? (

@@ -32,6 +32,7 @@ const UseEffectExample= lazy(() => import('./components/post/use-effect.componen
 const AboutPage = lazy(() => import('./pages/aboutpage/about.component'));
 const ServicesPage = lazy(() => import('./pages/servicespage/services.component'));
 const ContactPage = lazy(() => import('./pages/contactpage/contactpage.component'));
+const ThankYouPage = lazy(() => import('./pages/thank-you-page/thank-you-page.component'));
 
 const App = ({ checkUserSession, currentUser }) => {
 
@@ -72,6 +73,7 @@ const App = ({ checkUserSession, currentUser }) => {
                 <Route exact path='/file-upload' component={FileUploader} />
                 <Route exact path='/use-reducer-example' component={UseReducerExample} />
                 <Route exact path = '/use-effect-example' component={UseEffectExample} />
+                <Route exact path = '/thank-you' component={ThankYouPage} />
               </Suspense>
             </ErrorBoundary>
           </Switch>

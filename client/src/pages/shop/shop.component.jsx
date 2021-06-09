@@ -16,6 +16,7 @@ const ShopPage = ({fetchCollectionsStart, match}) => {
     return (
       <Suspense fallback={<Spinner />} >
       <div className='shop-page'>
+      <h1>This merchandise page is a test. Products are not real. Real BeatStyle merch is COMING SOON. Along with the ability to pay for audio services onsite with your account.</h1>
         <Route
           exact
           path={`${match.path}`}

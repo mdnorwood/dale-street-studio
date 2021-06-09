@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../assets/SVG/Dale-St-Studio.svg';
+import { ReactComponent as Logo } from '../../assets/DaleStStudioLogo.svg';
 
 
 export const MainHeaderContainer = styled.header`
@@ -40,7 +40,9 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const LogoMain = styled(Logo)`
-  width: 500px;
+  width: 100px;
+  float: left;
+  margin-right: 10px;
 
   
 
@@ -52,15 +54,14 @@ export const LogoMain = styled(Logo)`
 `;
 
 export const LogoText = styled.h1`
-  width: 600px;
+  width: 800px;
   color: ${({ theme }) => theme.primaryLight};
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Zilla Slab Highlight', cursive;
   font-weight: 700;
   font-size: 3em;
   line-height: .6em;
   margin-top: 35px;
-  text-align: center;
-  text-transform: lowercase;
+  text-align: left;
 
   @media screen and (max-width: 1100px) {
       font-size: 2em;

@@ -1,15 +1,22 @@
 import React from 'react';
+import { BannerContainer, BannerText, HeaderLineBreak } from './banner.styles';
+import AudioMeter from './../../components/audio-meter-animation/audio-meter.component';
+import MailchimpSubscribeForm from '../mailchimp-form/mailchimp-subscribe-form.component';
 
-import { BannerContainer, BannerTextBackground, BannerText } from './banner.styles';
 
+const Banner = () => {
 
-const Banner = () => (
+  return (
+
+    
   <BannerContainer>
-    <BannerTextBackground>
-      <BannerText>FRESH<br/>BEATS<br/>FOR SALE</BannerText>
-    </BannerTextBackground>
+    <AudioMeter />
+      <BannerText>Subscribe to get free<HeaderLineBreak /> non-exclusive Beat pack  or Master</BannerText>
+        <div id="mc_embed_signup">
+          <MailchimpSubscribeForm />
+        </div>
   </BannerContainer>
-
-);
+  )
+};
 
 export default React.memo(Banner);

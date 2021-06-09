@@ -56,7 +56,7 @@ export const CustomButtonContainer = styled.button`
   font-family: 'Open Sans Condensed';
   font-weight: bolder;
   cursor: pointer;
-  display: flex;
+  display: inline;
   justify-content: center;
 
   ${getButtonStyles}

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-import { db } from '../../firebase/firebase.utils';
+import React from 'react';
 
+import MusicPlayer from './../../components/music-player/music-player.component';
 
 import Directory from '../../components/directory/directory.component';
 import Banner from '../../components/banner/banner.component';
+import AltBanner from '../../components/banner/alt-banner.component';
+
 
 import { HomePageContainer } from './homepage.styles';
 
@@ -15,8 +16,9 @@ const HomePage = () => {
   return (
     <HomePageContainer>
       <Banner />
+      <MusicPlayer />
       <Directory />
-      
+      <AltBanner />
     </HomePageContainer>
   );
 }
