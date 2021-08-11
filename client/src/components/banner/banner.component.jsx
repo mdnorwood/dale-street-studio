@@ -1,8 +1,8 @@
 import React from 'react';
 import { BannerContainer, BannerText, HeaderLineBreak } from './banner.styles';
+import CustomButton from '../custom-button/custom-button.component';
 import AudioMeter from './../../components/audio-meter-animation/audio-meter.component';
 import MailchimpSubscribeForm from '../mailchimp-form/mailchimp-subscribe-form.component';
-
 
 const Banner = () => {
 
@@ -11,10 +11,12 @@ const Banner = () => {
     
   <BannerContainer>
     <AudioMeter />
-      <BannerText>Subscribe to get free<HeaderLineBreak /> non-exclusive Beat pack  or Master</BannerText>
-        <div id="mc_embed_signup">
-          <MailchimpSubscribeForm />
-        </div>
+    <BannerText>
+              Subscribe for rates
+              <div id="mc_embed_signup">
+                <MailchimpSubscribeForm />
+              </div>
+    </BannerText>
   </BannerContainer>
   )
 };

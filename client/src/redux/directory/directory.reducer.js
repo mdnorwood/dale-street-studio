@@ -3,36 +3,36 @@ const INITIAL_STATE = {
     {
       title: 'Mixing',
       subTitle: 'See More',
-      imageUrl: 'https://i.ibb.co/6YhddCZ/SSL-SiX.jpg',
+      imageUrl: 'https://i.ibb.co/xSYBPqN/SSL-SiX.webp',
       id: 1,
       linkUrl: 'mixing-info'
     },
     {
       title: 'Mastering',
       subTitle: 'See More',
-      imageUrl: 'https://i.ibb.co/HDksNjy/Portico-II.jpg',
+      imageUrl: 'https://i.ibb.co/vjd1hS5/Portico-II.webp',
       id: 2,
       linkUrl: 'mastering-info'
     },
     {
-      title: 'Audio Repair',
+      title: 'RX Repair',
       subTitle: 'See More',
-      imageUrl: 'https://i.ibb.co/64tycvy/RX8.png',
+      imageUrl: 'https://i.ibb.co/1vcRzxz/RX8.webp',
       id: 3,
-      linkUrl: 'mastering-info'
+      linkUrl: 'repair-info'
     },
     {
-      title: 'Beats',
+      title: 'Fresh Beats',
       subTitle: 'See More',
-      imageUrl: 'https://i.ibb.co/LSsMqfR/MPC.jpg',
+      imageUrl: 'https://i.ibb.co/20zwsy5/MPC.webp',
       size: 'large',
       id: 4,
-      linkUrl: 'production-info'
+      linkUrl: 'beats-for-sale'
     },
     {
       title: 'ABOUT',
       subTitle: 'See More',
-      imageUrl: 'https://i.ibb.co/PF8fV3H/Banner-Background.webp',
+      imageUrl: 'https://i.ibb.co/9yxNWLK/Banner-Background.webp',
       size: 'large',
       id: 5,
       linkUrl: 'about'

@@ -8,21 +8,17 @@ export const ResponsiveMenu = ({open}) => {
   return (
     <StyledMenu open={open}>
       <Link to="/services">
-        <span role="img" aria-label="services">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
-        Services
+        Audio Services
+      </Link>
+      <Link to="/beats-for-sale">
+        Beat Licenses
       </Link>
       <Link to="/about">
-        <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
         About
       </Link>
-      <Link to="/shop">
-        <span role="img" aria-label="shop">&#x1f4b8;</span>
-        Shop Merch
-        </Link>
-      <Link to="/contact">
-        <span role="img" aria-label="contact">&#x1f4e9;</span>
-        Contact
-        </Link>
+      <a href={'https://beatstyle.launchcart.store/shop'}>BeatStyle Merch</a>
+      <a href={'https://dale-street-studio.web.app/'}>Web Services</a>
+      <a href={'https://us7.list-manage.com/contact-form?u=daea54b2881619a66ef815217&form_id=5187f677a6d5390aef0c1e09d8470b9e'}><span role="img" aria-label="contact">&#x1f4e9;</span>Contact</a>
     </StyledMenu>
   );
 };

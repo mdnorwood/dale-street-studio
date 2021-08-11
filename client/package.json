@@ -20,6 +20,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-hot-loader": "^4.13.0",
+    "react-iframe": "^1.8.0",
     "react-jinke-music-player": "^4.23.0",
     "react-mailchimp-form": "^1.0.2",
     "react-redux": "^7.2.1",

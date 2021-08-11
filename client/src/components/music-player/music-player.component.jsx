@@ -1,101 +1,94 @@
 import Switch from 'rc-switch';
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactJkMusicPlayer from 'react-jinke-music-player';
 import 'react-jinke-music-player/assets/index.css';
-import { MusicPlayerButtonList } from './music-player.styles';
-import CustomButton from './../custom-button/custom-button.component';
+import { MusicPlayerButtonList, MusicPlayerListButton } from './music-player.styles';
+
+let topPosition = 150;
+let leftPosition = 50;
 
 
 const audioList1 = [
   {
-    name: 'Despacito',
-    singer: 'Luis Fonsi',
+    name: 'Slow It Down - Hybrid Master',
+    singer: 'M.D. Norwood',
     cover:
-      'http://res.cloudinary.com/alick/image/upload/v1502689731/Despacito_uvolhp.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FMDNorwood.jpeg?alt=media&token=3846b743-e39f-4fd4-8169-8feac4d26ff2',
     musicSrc:
-      'http://res.cloudinary.com/alick/video/upload/v1502689683/Luis_Fonsi_-_Despacito_ft._Daddy_Yankee_uyvqw9.mp3',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSlow-It-Down-Analog-Master.wav?alt=media&token=68be23f4-78f0-4e0f-9ecc-71bd45cca3ad',
     // support async fetch music src. eg.
     // musicSrc: async () => {
     //   return await fetch('/api')
     // },
   },
   {
-    name: 'Dorost Nemisham',
-    singer: 'Sirvan Khosravi',
+    name: 'Slow It Down - Original Mix',
+    singer: 'M.D. Norwood',
     cover:
-      'https://res.cloudinary.com/ehsanahmadi/image/upload/v1573758778/Sirvan-Khosravi-Dorost-Nemisham_glicks.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FMDNorwood.jpeg?alt=media&token=3846b743-e39f-4fd4-8169-8feac4d26ff2',
     musicSrc:
-      'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSlow-it-Down-Original-Mix.wav?alt=media&token=acb47746-c56d-4ad4-b1f5-eae90f85b4b5',
+  },
+  {
+    name: 'Slow It Down - Premix Demo',
+    singer: 'M.D. Norwood',
+    cover:
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FMDNorwood.jpeg?alt=media&token=3846b743-e39f-4fd4-8169-8feac4d26ff2',
+    musicSrc:
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSlow-it-down-Original-Demo.wav?alt=media&token=a4199b91-5c9f-4b33-bd81-da8492d39272',
   },
 ]
 
 const audioList2 = [
   {
-    name: 'Bedtime Stories',
-    singer: 'Jay Chou',
+    name: 'The Low Mids',
+    singer: 'Moonlight - Hybrid Master',
     cover:
-      'http://res.cloudinary.com/alick/image/upload/v1502375978/bedtime_stories_bywggz.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FLow-Mids-Moonlight.png?alt=media&token=8f07993d-37b3-467a-82bd-989e15cea7d2',
     musicSrc:
-      'http://res.cloudinary.com/alick/video/upload/v1502375674/Bedtime_Stories.mp3',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FLow-Mids-feat-SteelyDanimal-Moonlight-Master.wav?alt=media&token=2b6e5a8c-99a7-4396-a574-861b8850cdd3 ',
   },
   {
-    name: 'Dorost Nemisham',
-    singer: 'Sirvan Khosravi',
+    name: 'the Low Mids',
+    singer: 'Moonlight - Original Mix',
     cover:
-      'https://res.cloudinary.com/ehsanahmadi/image/upload/v1573758778/Sirvan-Khosravi-Dorost-Nemisham_glicks.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FLow-Mids-Moonlight.png?alt=media&token=8f07993d-37b3-467a-82bd-989e15cea7d2',
     musicSrc: () => {
       return Promise.resolve(
-        'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3',
+        'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2Fthe-Low-Mids-feat-SteelyDanimal-Moonlight-Original-Mix.wav?alt=media&token=929f8a8a-b5f8-4c07-9db2-f0472e4f43e0',
       )
     },
   },
   {
-    name: 'Despacito',
-    singer: 'Luis Fonsi',
+    name: 'S.T.E.V.E.',
+    singer: 'Bright Sized Life - Master',
     cover:
-      'http://res.cloudinary.com/alick/image/upload/v1502689731/Despacito_uvolhp.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2Fjazz.png?alt=media&token=ca292504-027e-4920-b34a-6bf694d30a62',
     musicSrc:
-      'http://res.cloudinary.com/alick/video/upload/v1502689683/Luis_Fonsi_-_Despacito_ft._Daddy_Yankee_uyvqw9.mp3',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FBright-Sized-Life-Jazz-Analog-Master.wav?alt=media&token=e19c975a-8f38-4235-a389-a8ac5b710465',
   },
 ]
 
 const audioList3 = [
   {
-    name: 'Despacito',
-    singer: 'Luis Fonsi',
+    name: 'Small Wonders',
+    singer: 'The Jam - Master',
     cover:
-      'http://res.cloudinary.com/alick/image/upload/v1502689731/Despacito_uvolhp.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FSWs.jpeg?alt=media&token=2922d128-b04f-49ea-ab0e-bf3cc6ea873d',
     musicSrc:
-      'http://res.cloudinary.com/alick/video/upload/v1502689683/Luis_Fonsi_-_Despacito_ft._Daddy_Yankee_uyvqw9.mp3',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSmall-Wonders-The-Jam-MASTER.wav?alt=media&token=28fc0158-2f0f-4149-9928-9915d2c22e2e',
   },
   {
-    name: 'Bedtime Stories',
-    singer: 'Jay Chou',
+    name: 'Small Wonders',
+    singer: 'The Jam - Original Mix',
     cover:
-      'http://res.cloudinary.com/alick/image/upload/v1502375978/bedtime_stories_bywggz.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FSWs.jpeg?alt=media&token=2922d128-b04f-49ea-ab0e-bf3cc6ea873d',
     musicSrc:
-      'http://res.cloudinary.com/alick/video/upload/v1502375674/Bedtime_Stories.mp3',
-  },
-  {
-    name: 'Dorost Nemisham',
-    singer: 'Sirvan Khosravi',
-    cover:
-      'https://res.cloudinary.com/ehsanahmadi/image/upload/v1573758778/Sirvan-Khosravi-Dorost-Nemisham_glicks.jpg',
-    musicSrc:
-      'https://res.cloudinary.com/ehsanahmadi/video/upload/v1573550770/Sirvan-Khosravi-Dorost-Nemisham-128_kb8urq.mp3',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSmall-Wonders-The-Jam-ORIGINAL-MIX.wav?alt=media&token=10cfdfe4-345b-4d4d-80c5-aab2965a6f98',
   },
 ]
 
-const audioList4 = [
-  {
-    name: 'Bedtime Stories',
-    singer: 'Jay Chou',
-    cover:
-      'http://res.cloudinary.com/alick/image/upload/v1502375978/bedtime_stories_bywggz.jpg',
-    musicSrc:
-      'http://res.cloudinary.com/alick/video/upload/v1502375674/Bedtime_Stories.mp3',
-  },
-]
+
 
 const options = {
   // audio lists model
@@ -156,9 +149,10 @@ const options = {
   remove: true,
 
   // audio controller initial position    [ type `Object` default '{top:0,left:0}' ]
+
   defaultPosition: {
-    left: 800,
-    top: 30,
+    left: leftPosition,
+    top: topPosition,
   },
 
   // if you want dynamic change current play mode you can change it
@@ -448,7 +442,21 @@ class MusicPlayer extends React.PureComponent {
         this.audio = audio
       },
     },
+    screenWidth: null,
+    updateWindowDimensions: this.updateWindowDimensions.bind(this),
   }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateWindowDimensions());
+}
+
+componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions)
+}
+
+updateWindowDimensions() {
+   this.setState({ screenWidth: window.innerWidth });
+}
 
   onAddAudio = () => {
     this.updateParams({
@@ -505,14 +513,6 @@ class MusicPlayer extends React.PureComponent {
     })
   }
 
-  onChangeToFourthAudioList = () => {
-    this.updateParams({
-      clearPriorAudioLists: true,
-      quietUpdate: false,
-      audioLists: audioList4,
-    })
-  }
-
   onQuietUpdateAudioList = () => {
     this.updateParams({
       clearPriorAudioLists: true,
@@ -521,13 +521,7 @@ class MusicPlayer extends React.PureComponent {
     })
   }
 
-  onQuietUpdateAudioLis2 = () => {
-    this.updateParams({
-      clearPriorAudioLists: true,
-      quietUpdate: true,
-      audioLists: audioList4,
-    })
-  }
+  
 
   onAutoPlayMode = () => {
     this.updateParams({
@@ -602,8 +596,8 @@ class MusicPlayer extends React.PureComponent {
   onPlayModeChange = (e) => {
     this.updateParams({ playMode: e.target.value })
   }
-
   
+
 
 
   render() {
@@ -613,19 +607,17 @@ class MusicPlayer extends React.PureComponent {
       <div>
       {(params.mode === 'full') ? (
         <MusicPlayerButtonList>
-        <section className="settings" style={{ marginBottom: '10px' }}>
-            <CustomButton style={{ marginRight: '10px' }} type="button" onClick={this.onChangeToFirstAudioList}>
-              Mastering Comparison 1 ({audioList1.length})
-            </CustomButton>
-            <CustomButton style={{ marginRight: '10px' }}  type="button" onClick={this.onChangeToSecondAudioList}>
-              Mastering Comparison 2 ({audioList2.length})
-            </CustomButton>
-            <CustomButton style={{ marginRight: '10px' }}  type="button" onClick={this.onChangeToThirdAudioList}>
-              Mastering Comparison  3 ({audioList3.length})
-          </CustomButton>
-            <CustomButton type="button" onClick={this.onChangeToFourthAudioList}>
-            Mastering Comparison  4 ({audioList4.length})
-          </CustomButton>
+        <section className="settings">
+        <h2 style={{textAlign: 'center'}}>Mix vs. Master</h2>
+            <MusicPlayerListButton style={{ margin: '10px', paddingBottom: '10px' }} type="button" onClick={this.onChangeToFirstAudioList}>
+              Rock & Soul ({audioList1.length})
+            </MusicPlayerListButton>
+            <MusicPlayerListButton s type="button" onClick={this.onChangeToSecondAudioList}>
+              Jazz ({audioList2.length})
+            </MusicPlayerListButton>
+            <MusicPlayerListButton   type="button" onClick={this.onChangeToThirdAudioList}>
+              Hiphop ({audioList3.length})
+          </MusicPlayerListButton>
       </section>
       </MusicPlayerButtonList>
       ) : (

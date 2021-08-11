@@ -54,7 +54,7 @@ export const LogoMain = styled(Logo)`
 `;
 
 export const LogoText = styled.h1`
-  width: 800px;
+  width: 50px;
   color: ${({ theme }) => theme.primaryLight};
   font-family: 'Zilla Slab Highlight', cursive;
   font-weight: 700;
@@ -62,20 +62,22 @@ export const LogoText = styled.h1`
   line-height: .6em;
   margin-top: 35px;
   text-align: left;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 1100px) {
-      font-size: 2em;
-    }
-
-  @media screen and (max-width: 800px) {
       display: none;
     }
 `;
 
 export const LogoSubText = styled.span`
   color: ${({ theme }) => theme.primaryLight};
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: .6em;
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 1.5em;
+  margin-top: 20px;
+
+  @media screen and (max-width: 1100px) {
+      display: none;
+    }
 `;
 
 export const OptionsContainer = styled.div`
@@ -84,6 +86,15 @@ export const OptionsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 100px;
+
+    @media screen and (max-width: 1100px) {
+      width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
 
     @media screen and (max-width: 800px) {
       display: none;

@@ -4,6 +4,7 @@ import { createStructuredSelector } from 'reselect';
 
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+import HeaderSignInCart from './header-signin-cart.component';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { signOutStart } from '../../redux/user/user.actions';
@@ -37,11 +38,11 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
       <HeaderContainer>
         <LogoContainer to='/'>
           <LogoMain />
-          <LogoText>DALE STREET STUDIO</LogoText>
+          <LogoText></LogoText>
         </LogoContainer>
         <OptionsContainer>
-          <SpecialText isActive={false}>Now Booking Clients</SpecialText>
-          <OptionLink
+        <a href={'http://eepurl.com/hyqpfb'}><SpecialText isActive={true}>Booking</SpecialText></a>
+        <OptionLink
             className='material-icons'
             exact
             to='/'
@@ -52,7 +53,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
             }}
           >
             home
-          </OptionLink>
+          </OptionLink> 
           <OptionLink
             exact
             to='/services'
@@ -62,7 +63,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
               fontSize: "25px"
             }}
           >
-            SERVICES
+            Audio Services
           </OptionLink>
           <OptionLink
             exact
@@ -73,33 +74,23 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
               fontSize: "25px"
             }}
           >
-            ABOUT
+            About
           </OptionLink>
-          <a style={{ color: 'white', padding: '15px' }} href={'http://eepurl.com/hyqpfb'}>BOOK SERVICES</a>
-          
-          <a style={{ color: 'white', padding: '15px' }} target="new" href={'https://beatstyle.launchcart.store/shop'}>BeatStyle Merch</a>
-          
-        </OptionsContainer>
-
-        {currentUser ? (
-          <SignOutAndInLink as='div' className='option' onClick={signOutStart}>
-            SIGN OUT
-          </SignOutAndInLink>
-        ) : (
-          <SignOutAndInLink
+                <OptionLink
             exact
-            to='/sign-in'
+            to='/beats-for-sale'
             activeStyle={{
               fontWeight: "bold",
-              color: "#faae2b"
+              color: "#faae2b",
+              fontSize: "25px"
             }}
           >
-            SIGN IN
-          </SignOutAndInLink>
-        )}
-
-        <CartIcon className='option' />
-        {hidden ? null : <CartDropdown />}
+            Beats for Sale
+          </OptionLink> 
+          <a style={{ color: 'white', padding: '15px' }} href={'https://dale-street-studio.web.app/'}>Web Services</a>
+          <a style={{ color: 'white', padding: '15px' }} href={'https://us7.list-manage.com/contact-form?u=daea54b2881619a66ef815217&form_id=5187f677a6d5390aef0c1e09d8470b9e'}>Contact</a>
+        </OptionsContainer>        
+        
         <div ref={node}>
           <Burger open={open} setOpen={setOpen} />
           <ResponsiveMenu open={open} setOpen={setOpen}></ResponsiveMenu>

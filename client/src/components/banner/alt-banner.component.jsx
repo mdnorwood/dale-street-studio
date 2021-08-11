@@ -1,7 +1,10 @@
 import React from 'react';
-import { AltBannerContainer, AltBannerTextBackgroundGreen, AltBannerTextBackgroundYellow, AltBannerTextBackgroundRed } from './alt-banner.styles';
+import { Link } from 'react-router-dom';
 
-import { BannerText } from './banner.styles';
+import CustomButton from '../custom-button/custom-button.component';
+import { AltBannerContainer, AltBannerTextBackgroundGreen, AltBannerTextBackgroundYellow, AltBannerTextBackgroundRed, AltHeaderText, AltHeaderSubText } from './alt-banner.styles';
+
+import { BannerText, HeaderLineBreak } from './banner.styles';
 
 const AltBanner = () => {
     return (
@@ -10,11 +13,16 @@ const AltBanner = () => {
             &nbsp;
           </AltBannerTextBackgroundRed>
           <AltBannerTextBackgroundYellow>
-            &nbsp;<br/>&nbsp;
+            &nbsp;
           </AltBannerTextBackgroundYellow>
           <AltBannerTextBackgroundGreen>
-            &nbsp;
-            <BannerText>Blog & YouTube Channel<br/>Coming Soon!</BannerText>
+            <BannerText>
+            <AltHeaderText>FRESH BEATS FOR SALE</AltHeaderText>
+            <hr/>
+            <AltHeaderSubText>
+            Exclusive, Non-Exclusive, and NFT</AltHeaderSubText><br/>
+            <Link to='/beats-for-sale'><CustomButton style={{fontSize: '30px'}}> Listen and Shop</CustomButton></Link>
+            </BannerText>
           </AltBannerTextBackgroundGreen>
         </AltBannerContainer>
     );

@@ -22,41 +22,34 @@ export const BannerText = styled.h1`
   align-items: center;
   vertical-align: middle;
   letter-spacing: 10px;
-  margin-top: 10px;
-  padding-top: 0;
   margin-bottom: 10px;
 
   @media screen and (max-width: 1883px) {
     font-size: 3em;
-    margin-top: 10px;
   }
 
   @media screen and (max-width: 1425px) {
     font-size: 2.5em;
     line-height: 1.5em;
-    margin-top: 10px;
   }
 
   @media screen and (max-width: 1200px) {
     font-size: 2em;
     line-height: 1.5em;
-    margin-top: 10px;
   }
 
   @media screen and (max-width: 1100px) {
     font-size: 1.3em;
     line-height: 1.5em;
-    margin-top: 10px;
   }
 
   @media screen and (max-width: 900px) {
-    font-size: .9em;
+    font-size: 1.5em;
     line-height: 1.5em;
-    margin-top: 10px;
   }
 
   @media screen and (max-width: 600px) {
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1.5em;
     margin-top: 10px;
   }

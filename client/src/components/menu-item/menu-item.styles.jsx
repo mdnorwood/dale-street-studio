@@ -9,7 +9,7 @@ export const MenuItemContainer = styled.div`
 	align-items: center;
 	justify-content: center;
 	border: 2px solid white;
-	margin: 0 0 15px;
+	
 	overflow: hidden;
 
 	&:hover {
@@ -26,11 +26,11 @@ export const MenuItemContainer = styled.div`
 	}
 
 	&:first-child {
-    margin-right: 7.5px;
+    
   }
 
   &:last-child {
-    margin-left: 7.5px;
+ 
   }
 
   @media screen and (max-width: 800px) {
@@ -60,7 +60,7 @@ export const ContentContainer = styled.div`
   position: absolute;
 
   @media screen and (max-width: 800px) {
-
+    padding: 0 5px;
   }
 `;
 
@@ -71,7 +71,7 @@ export const ContentTitle = styled.span`
   color: #4a4a4a;
 
   @media screen and (max-width: 800px) {
-
+    font-size: 16px;
   }
 `;
 
@@ -79,6 +79,7 @@ export const ContentSubtitle = styled.span`
   font-weight: lighter;
   font-size: 16px;
   color: ${({ theme }) => theme.primaryDark};
+  
   @media screen and (max-width: 800px) {
 
   }
