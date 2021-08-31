@@ -87,7 +87,6 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
           >
             Beat Licenses
           </OptionLink> 
-          <a style={{ color: 'white', padding: '15px' }} href={'https://dale-street-studio.web.app/'}>Web Services</a>
           <a style={{ color: 'white', padding: '15px' }} href={'https://us7.list-manage.com/contact-form?u=daea54b2881619a66ef815217&form_id=5187f677a6d5390aef0c1e09d8470b9e'}>Contact</a>
         </OptionsContainer>        
         

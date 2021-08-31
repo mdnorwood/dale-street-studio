@@ -16,8 +16,6 @@ export const ResponsiveMenu = ({open}) => {
       <Link to="/about">
         About
       </Link>
-      <a href={'https://beatstyle.launchcart.store/shop'}>BeatStyle Merch</a>
-      <a href={'https://dale-street-studio.web.app/'}>Web Services</a>
       <a href={'https://us7.list-manage.com/contact-form?u=daea54b2881619a66ef815217&form_id=5187f677a6d5390aef0c1e09d8470b9e'}><span role="img" aria-label="contact">&#x1f4e9;</span>Contact</a>
     </StyledMenu>
   );
