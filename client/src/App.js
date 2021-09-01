@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import {Helmet} from "react-helmet";
+import 'babel-polyfill';
 
 import { GlobalStyle } from  './global.styles';
 import { ThemeProvider } from 'styled-components';
@@ -48,7 +49,7 @@ const App = ({ checkUserSession, currentUser }) => {
         <title>Dale St. Studio</title>
         <link rel='canonical' href='https://dalestreetstudio.com' />
         {/* multiple meta elements */}
-        <meta name="description" content="Music Mastering, Mixing & Production services located in Colorado Springs, CO. Affordable rates and revisions." />
+        <meta name="description" content="Music Mastering, Mixing & Production services located in Colorado Springs, CO. Affordable rates and revisions. Quick turnaround. Contact or subscribe fore booking! " />
       </Helmet>
       <ThemeProvider theme={theme}>
       <div>
