@@ -1,2 +1,3 @@
+# https://dalestreetstudio.com
 User-agent: *
-Disallow: /
+Disallow:

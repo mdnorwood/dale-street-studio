@@ -43,6 +43,13 @@ const App = ({ checkUserSession, currentUser }) => {
   }, [checkUserSession]);
     return (
       <div className="application">
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Dale St. Studio</title>
+        <link rel='canonical' href='https://dalestreetstudio.com' />
+        {/* multiple meta elements */}
+        <meta name="description" content="Music Mastering, Mixing & Production services located in Colorado Springs, CO. Affordable rates and revisions." />
+      </Helmet>
       <ThemeProvider theme={theme}>
       <div>
           <GlobalStyle />
