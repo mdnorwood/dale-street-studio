@@ -9,7 +9,7 @@ const AboutPage = (props) =>{
     <PageContainer>
     <Helmet>
         <title>About</title>
-        <meta name="about" content="About Dale Street Studio, LLC" />
+        <meta name="about" content="About Dale Street Studio, LLC. & DjDefinitionBeats.com" />
     </Helmet>
     <PageTitleOne className='date'>About</PageTitleOne>
     <PageTitleTwo>Description</PageTitleTwo>

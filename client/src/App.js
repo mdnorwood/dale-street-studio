@@ -2,7 +2,7 @@ import React, { useEffect, lazy, Suspense } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import 'babel-polyfill';
 
 import { GlobalStyle } from  './global.styles';

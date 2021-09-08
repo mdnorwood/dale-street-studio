@@ -22,7 +22,7 @@ const INITIAL_STATE = {
       linkUrl: 'repair-info'
     },
     {
-      title: 'Fresh Beats',
+      title: 'Beat Leases',
       subTitle: 'See More',
       imageUrl: 'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FMPC.webp?alt=media&token=b6a6c95a-51d2-4c42-b7ee-302671d6cae3',
       size: 'large',
