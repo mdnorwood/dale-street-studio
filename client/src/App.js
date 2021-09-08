@@ -68,7 +68,6 @@ const App = ({ checkUserSession, currentUser }) => {
                 <Route exact path='/mixing-info' component={MixingPage} />
                 <Route exact path='/mastering-info' component={MasteringPage} />
                 <Route exact path='/repair-info' component={RepairPage} />
-                <Route exact path='/mastering-info' component={RepairPage} />
                 <Route exact path='/contact' component={ContactPage} />
                 <Route
                   exact
