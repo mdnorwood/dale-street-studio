@@ -12,7 +12,7 @@ const Banner = () => {
   <BannerContainer>
     <AudioMeter />
     <BannerText>
-              Subscribe for a free 1 free digital master. Plus booking rates.
+              Subscribe for 1 free digital master & booking rates.
               <div id="mc_embed_signup">
                 <MailchimpSubscribeForm />
               </div>
