@@ -25,6 +25,7 @@
     "stripe": "6.28.0"
   },
   "devDependencies": {
+    "babel-preset-react": "^6.24.1",
     "concurrently": "^6.0.0",
     "nodemon": "^1.19.1"
   }
