@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "https://localhost:7000",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.0",
     "babel-polyfill": "^6.26.0",
+    "core-js": "^3.17.3",
     "firebase": "^7.23.0",
     "lodash.memoize": "^4.1.2",
     "persist": "^0.2.7",
@@ -61,7 +63,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.15.5",
     "@babel/node": "^7.14.9",
     "@babel/preset-env": "^7.15.0",
     "babel-cli": "^6.26.0",
