@@ -1,25 +1,15 @@
-const routes = [
-    {
-        path: '/',
-    },
-    {
-        path: '/about',
-    },
-    {
-        path: '/beats-for-sale',
-    },
-    {
-        path: '/services'
-    },
-    {
-        path: '/mixing-info'
-    },
-    {
-        path: '/mastering-info'
-    },
-    {
-        path: '/repair-info'
-    }
-]
+import React from 'react'
+import { BrowserRouter, Route } from 'react-router-dom';
 
-export default routes;
+export default (
+    <BrowserRouter>
+     <Route path="/b" />
+     <Route path="/about" />
+     <Route path="/beats-for-sale" />
+     <Route path="/services" />
+     <Route path="/mixing-info" />
+     <Route path="/mastering-info" />
+     <Route path="/repair-info" />
+    </BrowserRouter>
+   )
+
