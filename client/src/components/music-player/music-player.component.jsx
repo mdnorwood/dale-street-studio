@@ -4,8 +4,8 @@ import ReactJkMusicPlayer from 'react-jinke-music-player';
 import 'react-jinke-music-player/assets/index.css';
 import { MusicPlayerButtonList, MusicPlayerListButton } from './music-player.styles';
 
-let topPosition = 150;
-let leftPosition = 50;
+let topPosition = 40;
+let leftPosition = 160;
 
 
 const audioList1 = [
@@ -22,24 +22,13 @@ const audioList1 = [
     // },
   },
   {
-    name: 'Slow It Down - Original Mix',
-    singer: 'M.D. Norwood',
+    name: 'Small Wonders',
+    singer: 'The Jam - Master',
     cover:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FMDNorwood.jpeg?alt=media&token=3846b743-e39f-4fd4-8169-8feac4d26ff2',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FSWs.jpeg?alt=media&token=2922d128-b04f-49ea-ab0e-bf3cc6ea873d',
     musicSrc:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSlow-it-Down-Original-Mix.wav?alt=media&token=acb47746-c56d-4ad4-b1f5-eae90f85b4b5',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSmall-Wonders-The-Jam-MASTER.wav?alt=media&token=28fc0158-2f0f-4149-9928-9915d2c22e2e',
   },
-  {
-    name: 'Slow It Down - Premix Demo',
-    singer: 'M.D. Norwood',
-    cover:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FMDNorwood.jpeg?alt=media&token=3846b743-e39f-4fd4-8169-8feac4d26ff2',
-    musicSrc:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSlow-it-down-Original-Demo.wav?alt=media&token=a4199b91-5c9f-4b33-bd81-da8492d39272',
-  },
-]
-
-const audioList2 = [
   {
     name: 'The Low Mids',
     singer: 'Moonlight - Hybrid Master',
@@ -47,17 +36,6 @@ const audioList2 = [
       'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FLow-Mids-Moonlight.png?alt=media&token=8f07993d-37b3-467a-82bd-989e15cea7d2',
     musicSrc:
       'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FLow-Mids-feat-SteelyDanimal-Moonlight-Master.wav?alt=media&token=2b6e5a8c-99a7-4396-a574-861b8850cdd3 ',
-  },
-  {
-    name: 'the Low Mids',
-    singer: 'Moonlight - Original Mix',
-    cover:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FLow-Mids-Moonlight.png?alt=media&token=8f07993d-37b3-467a-82bd-989e15cea7d2',
-    musicSrc: () => {
-      return Promise.resolve(
-        'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2Fthe-Low-Mids-feat-SteelyDanimal-Moonlight-Original-Mix.wav?alt=media&token=929f8a8a-b5f8-4c07-9db2-f0472e4f43e0',
-      )
-    },
   },
   {
     name: 'S.T.E.V.E.',
@@ -69,24 +47,7 @@ const audioList2 = [
   },
 ]
 
-const audioList3 = [
-  {
-    name: 'Small Wonders',
-    singer: 'The Jam - Master',
-    cover:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FSWs.jpeg?alt=media&token=2922d128-b04f-49ea-ab0e-bf3cc6ea873d',
-    musicSrc:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSmall-Wonders-The-Jam-MASTER.wav?alt=media&token=28fc0158-2f0f-4149-9928-9915d2c22e2e',
-  },
-  {
-    name: 'Small Wonders',
-    singer: 'The Jam - Original Mix',
-    cover:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FSWs.jpeg?alt=media&token=2922d128-b04f-49ea-ab0e-bf3cc6ea873d',
-    musicSrc:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSmall-Wonders-The-Jam-ORIGINAL-MIX.wav?alt=media&token=10cfdfe4-345b-4d4d-80c5-aab2965a6f98',
-  },
-]
+
 
 
 
@@ -489,37 +450,6 @@ updateWindowDimensions() {
     })
   }
 
-  onChangeToFirstAudioList = () => {
-    this.updateParams({
-      clearPriorAudioLists: true,
-      quietUpdate: false,
-      audioLists: audioList1,
-    })
-  }
-
-  onChangeToSecondAudioList = () => {
-    this.updateParams({
-      clearPriorAudioLists: true,
-      quietUpdate: false,
-      audioLists: audioList2,
-    })
-  }
-
-  onChangeToThirdAudioList = () => {
-    this.updateParams({
-      clearPriorAudioLists: true,
-      quietUpdate: false,
-      audioLists: audioList3,
-    })
-  }
-
-  onQuietUpdateAudioList = () => {
-    this.updateParams({
-      clearPriorAudioLists: true,
-      quietUpdate: true,
-      audioLists: audioList3,
-    })
-  }
 
   
 
@@ -608,16 +538,8 @@ updateWindowDimensions() {
       {(params.mode === 'full') ? (
         <MusicPlayerButtonList>
         <section className="settings">
-        <h2 style={{textAlign: 'center'}}>Mix vs. Master</h2>
-            <MusicPlayerListButton style={{ margin: '10px', paddingBottom: '10px' }} type="button" onClick={this.onChangeToFirstAudioList}>
-              Rock & Soul ({audioList1.length})
-            </MusicPlayerListButton>
-            <MusicPlayerListButton s type="button" onClick={this.onChangeToSecondAudioList}>
-              Jazz ({audioList2.length})
-            </MusicPlayerListButton>
-            <MusicPlayerListButton   type="button" onClick={this.onChangeToThirdAudioList}>
-              Hiphop ({audioList3.length})
-          </MusicPlayerListButton>
+        <h2 style={{textAlign: 'center'}}>Mastered by Dale St. Studio</h2>
+          
       </section>
       </MusicPlayerButtonList>
       ) : (

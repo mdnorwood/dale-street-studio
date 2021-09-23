@@ -96,7 +96,7 @@ export const OptionsContainer = styled.div`
     justify-content: flex-end;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
       display: none;
     }
 `;
@@ -106,7 +106,7 @@ export const OptionLink = styled(NavLink)`
   cursor: pointer;
   color: ${({ theme }) => theme.primaryLight};
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     width: 90%;
     height: 100%;
     display: flex;
@@ -122,7 +122,7 @@ export const SignOutAndInLink = styled(NavLink)`
   cursor: pointer;
   color: ${({ theme }) => theme.primaryLight};
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     border: 1px solid white;
     margin-left:180px;
     margin-top: 0;
@@ -138,7 +138,7 @@ export const SpecialText = styled.h1`
   border: ${({isActive}) => isActive ? '10px solid #27af6c' : '3px solid white'};
   display: none;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
       display: none;
     }
 `;
