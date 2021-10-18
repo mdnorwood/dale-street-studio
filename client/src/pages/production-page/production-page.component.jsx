@@ -8,7 +8,7 @@ const ProductionPage = (props) => {
     <div>
       <h1>Licensing Opportunities</h1>
       <h3>Non-Exclusive & Exclusive</h3>
-      <p>See license contract details at DjDefinitionBeats.com for more details on lease agreement types. Contact me at the studio for more information or questions.</p>
+      <p>See licensing contracts at DjDefinitionBeats.com for more details on lease agreement types. Contact me for more information or questions.</p>
       <center><a href={'https://djdefinitionbeats.com/'}><CustomButton style={{textAlign: 'center'}}><span style={{paddingRight: '10px'}} role="img" aria-label="contact">&#x1f4e9;</span>DjDefinitionBeats.com</CustomButton></a></center>
       <hr/>  
       <Iframe 

@@ -64,4 +64,15 @@ export const HeaderLineBreak = styled.br`
   
 `;
 
+export const SubscribeButton = styled.a`
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    border: 5px solid white;
 
+    @media screen and (max-width: 600px) {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+`;

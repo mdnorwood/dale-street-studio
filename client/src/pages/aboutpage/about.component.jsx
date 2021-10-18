@@ -13,7 +13,10 @@ const AboutPage = (props) =>{
     </Helmet>
     <PageTitleOne className='date'>About</PageTitleOne>
     <PageTitleTwo>Description</PageTitleTwo>
-    <PageText>Dale Street Studio is a small boutique audio studio in Colorado Springs, Colorado with a focus on mixing, mastering & audio repair. As well as offering beat licensing opportunities through DjDefinitionBeats.com. Operated by longtime audiophile and former Dj. Now focused on offering new beat licensing opportunities with fresh weekly releases. As well as helping clients and other musicians polish off their sound. Contact me today to see how I can help or take a look at one of my current beat lease/license opportunties currenlty available.
+    <PageText>Dale Street Studio, LLC is a small boutique freelance audio studio in Colorado Springs, Colorado. Focused on mixing, mastering & audio repair. Helping clients and other musicians polish off their sound. Contact me today to see how I can help or take a look at one of my current beat lease/license opportunties currenlty available.
+    </PageText>
+    <PageText>
+    As well as offering beat licensing opportunities for artists, tv, & film through DjDefinitionBeats.com. Contributing fresh weekly releases to those that would like to lease instrumentals. 
     </PageText>
     <PageTitleTwo>Booking</PageTitleTwo>
     <PageText style={{marginBottom: '45px'}}>
