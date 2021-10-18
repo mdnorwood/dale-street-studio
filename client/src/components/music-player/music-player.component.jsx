@@ -5,7 +5,7 @@ import 'react-jinke-music-player/assets/index.css';
 import { MusicPlayerButtonList, MusicPlayerListButton } from './music-player.styles';
 
 let topPosition = 40;
-let leftPosition = 160;
+let leftPosition = 140;
 
 
 const audioList1 = [
@@ -13,7 +13,7 @@ const audioList1 = [
     name: 'Slow It Down - Hybrid Master',
     singer: 'M.D. Norwood',
     cover:
-      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FMDNorwood.jpeg?alt=media&token=3846b743-e39f-4fd4-8169-8feac4d26ff2',
+      'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/images%2FSlowItDown.jpg?alt=media&token=6978deb7-a7de-41cc-9c26-4585a1c090ba',
     musicSrc:
       'https://firebasestorage.googleapis.com/v0/b/definition-music-and-mastering.appspot.com/o/wavs%2FSlow-It-Down-Analog-Master.wav?alt=media&token=68be23f4-78f0-4e0f-9ecc-71bd45cca3ad',
     // support async fetch music src. eg.

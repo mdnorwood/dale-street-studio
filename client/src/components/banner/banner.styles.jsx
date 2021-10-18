@@ -15,7 +15,7 @@ export const BannerContainer = styled.div`
 
 export const BannerText = styled.h1`
   color: white;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight:bold;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1em;
@@ -25,7 +25,7 @@ export const BannerText = styled.h1`
   margin-bottom: 10px;
 
   @media screen and (max-width: 1883px) {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   @media screen and (max-width: 1425px) {

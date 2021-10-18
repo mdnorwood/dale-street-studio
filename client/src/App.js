@@ -48,7 +48,7 @@ const App = ({ checkUserSession, currentUser }) => {
         <meta charSet='utf-8' />
         <title>Dale St. Studio</title>
         <link rel='canonical' href='https://dalestreetstudio.com' />
-        <meta name="description" content="Music Mastering, Mixing & Production services located in Colorado Springs, CO. Affordable rates and revisions. Quick turnaround. Contact or subscribe for booking! " />
+        <meta name="description" content="Stereo Wav Digital and Hybrid Analog Mastering, Modern Mixing & Production, and Beat Licensing / Leasing services. Located in Colorado Springs, Colorado. Affordable rates and revisions. Quick turnaround. Contact or subscribe for booking! " />
         <meta name="thumbnail" content="http://example/DaleStreetStudio.png" />
 
 

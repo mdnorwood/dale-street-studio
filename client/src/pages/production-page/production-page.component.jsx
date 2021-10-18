@@ -6,9 +6,12 @@ import CustomButton from '../../components/custom-button/custom-button.component
 const ProductionPage = (props) => {
   return (
     <div>
-      <h1>FRESH BEATS FOR SALE</h1>
-      <h3>New @ BeatStars - Fresh Weekly Releases!</h3>
-        <Iframe 
+      <h1>Licensing Opportunities</h1>
+      <h3>Non-Exclusive & Exclusive</h3>
+      <p>See license contract details at DjDefinitionBeats.com for more details on lease agreement types. Contact me at the studio for more information or questions.</p>
+      <center><a href={'https://djdefinitionbeats.com/'}><CustomButton style={{textAlign: 'center'}}><span style={{paddingRight: '10px'}} role="img" aria-label="contact">&#x1f4e9;</span>DjDefinitionBeats.com</CustomButton></a></center>
+      <hr/>  
+      <Iframe 
           url='https://player.beatstars.com/?storeId=122207'
           width='100%'
           height='800'

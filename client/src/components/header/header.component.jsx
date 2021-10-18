@@ -85,7 +85,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
               fontSize: "25px"
             }}
           >
-            Beat Licenses
+            Lease a Beat
           </OptionLink> 
           <a style={{ color: 'white', padding: '15px' }} href={'https://gmail.us7.list-manage.com/subscribe?u=daea54b2881619a66ef815217&id=53f71ba6a2'}>Booking</a>
           <a style={{ color: 'white', padding: '15px' }} href={'https://us7.list-manage.com/contact-form?u=daea54b2881619a66ef815217&form_id=5187f677a6d5390aef0c1e09d8470b9e'}>Contact</a>
