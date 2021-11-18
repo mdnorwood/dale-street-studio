@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         
         <FooterContainer>
-            <center><FooterCopyrightContainer><FooterCopyrightText>&#169; {n}, Dale Street Studio, LLC</FooterCopyrightText></FooterCopyrightContainer></center>
+            <center><FooterCopyrightContainer><FooterCopyrightText>&#169; {n} Dale Street Studio LLC</FooterCopyrightText></FooterCopyrightContainer></center>
         </FooterContainer>
     );
 };

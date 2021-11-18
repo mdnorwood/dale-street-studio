@@ -5,10 +5,9 @@ import Banner from '../../components/banner/banner.component';
 import { Helmet } from "react-helmet";
 
 import { HomePageContainer } from './homepage.styles';
+import AudioMeter from '../../components/audio-meter-animation/audio-meter.component';
 
 const HomePage = () => {
-
-  
 
   return (
     
@@ -21,7 +20,7 @@ const HomePage = () => {
       <meta name="description" content="Music Mastering, Mixing & Production services located in Colorado Springs, CO. Affordable rates and revisions. Quick turnaround. Contact or subscribe for booking! " />
       <meta name="thumbnail" content="http://example/DaleStreetStudio.png" />
     </Helmet>
-
+      <AudioMeter />
       <Banner />
       <Directory />
     </HomePageContainer>
